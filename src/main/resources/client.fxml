@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="589.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.lib.projetchat.controller.HelloController">
+   <children>
+      <ScrollPane fx:id="chat" layoutX="16.0" layoutY="65.0" prefHeight="350.0" prefWidth="561.0">
+         <content>
+            <VBox fx:id="vBox" prefHeight="339.0" prefWidth="564.0" style="-fx-background-color: #90EE90;" />
+         </content></ScrollPane>
+      <TextField fx:id="champ" layoutX="75.0" layoutY="420.0" onAction="#txtMsg" prefHeight="30.0" prefWidth="392.0" promptText="Entrer un message" style="-fx-background-color: #90EE90;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <Button fx:id="btn" layoutX="514.0" layoutY="417.0" mnemonicParsing="false" onAction="#send" prefHeight="32.0" prefWidth="40.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/send-icon.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="logo" fitHeight="68.0" fitWidth="84.0" layoutX="16.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/icone-whatapp-isometrique-isolee-realiste-3d_125540-2045.jpg" />
+         </image></ImageView>
+      <Text fill="#101110" layoutX="84.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="App Chat" wrappingWidth="55.0859375">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="11.0" />
+         </font></Text>
+      <Button fx:id="btn1" layoutX="16.0" layoutY="415.0" mnemonicParsing="false" onAction="#emoji" prefHeight="32.0" prefWidth="40.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fx:id="emoji" fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/emoji-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn2" layoutX="467.0" layoutY="415.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="40.0" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fx:id="audio" fitHeight="35.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/6856991-mani-tenendo-uno-smartphone-vuoto-chat-amore-e-seguaci-bolle-e-notifica-di-avviso-cartoon-app-sito-web-ui-su-sfondo-rosa-3d-rendering-illustrazione-gratui.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="logo1" fitHeight="39.0" fitWidth="34.0" layoutX="457.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/28655049-telephone-icone-solide-style-vectoriel.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="logo11" fitHeight="30.0" fitWidth="21.0" layoutX="504.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/8145bd48b6b0593d01d69d499d2a1f8f.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
